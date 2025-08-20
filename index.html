@@ -25,6 +25,12 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <!-- Gradio -->
+  <script
+	  type="module"
+	  src="https://gradio.s3-us-west-2.amazonaws.com/5.42.0/gradio.js"
+  ></script>
 </head>
 <body>
 
@@ -39,33 +45,16 @@
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://aidas.snu.ac.kr">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+        <div style="padding-left:5px;">AIDAS Lab</div>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://aidas.snu.ac.kr">
-            Paper1
-          </a>
-          <a class="navbar-item" href="https://aidas.snu.ac.kr">
-            Paper2
-          </a>
-          <a class="navbar-item" href="https://aidas.snu.ac.kr">
-            Paper3
-          </a>
-        </div>
-      </div>
     </div>
-
   </div>
 </nav>
 
-
+<!-- Title -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -161,6 +150,8 @@
   </div>
 </section>
 
+
+<!-- Teaser -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -177,10 +168,10 @@
 </section>
 
 
+<!-- Paper abstract -->
 <section class="hero is-light ">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <!-- Paper abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <h2 class="title is-3">Abstract</h2>
@@ -199,10 +190,26 @@
   </div>
 </section>
 
-
+<!-- Demo -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Method -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Demo</h2>
+        <p>
+          This section provides an interactive demo of the research. You can try out the model and see how it works in real-time.
+          The demo allows you to input data and observe the model's predictions or outputs.
+        </p>
+        <gradio-app src="https://aidas-lab-test.hf.space"></gradio-app>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Method -->
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Method</h2>
@@ -217,16 +224,16 @@
         </div>
         <!-- Diagram or Illustration of Method -->
         <figure class="image">
-          <img src="./static/images/snu-night.jpg" style="max-width:70%;margin-right:auto;margin-left:auto;margin-top:50px;"
+          <img src="./static/images/snu-night.jpg" style="max-width:70%;margin-right:auto;margin: 50px auto 0 auto;"
                alt="Diagram illustrating the method used in the research">
         </figure>
         <h3 class="has-text-centered" style="margin-top: 20px;">Caption of the Method Diagram</h3>
       </div>
 </section>
 
+<!-- Results -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Results -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Results</h2>
@@ -240,7 +247,7 @@
             It often includes data, figures, and tables to illustrate the findings.
           </p>
           <!-- table example -->
-            <table class="table is-striped is-hoverable is-fullwidth has-text-centered">
+          <table class="table is-striped is-hoverable is-fullwidth has-text-centered">
             <thead>
               <tr>
               <th rowspan="2">Baseline</th>
@@ -288,26 +295,9 @@
               </td>
               </tr>
             </tfoot>
-            </table>
+          </table>
         </div>
       </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Acknowledgements -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Acknowledgements</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            This section acknowledges the contributions of individuals and organizations that supported the research.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 
@@ -324,7 +314,7 @@
 </section>
 
 
-<footer class="footer">
+<footer class="footer" style="padding-bottom: 40px;">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -335,7 +325,17 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
         </div>
+        <div class="content has-text-centered">
+          <!-- LOGO -->
+          <a href="https://en.snu.ac.kr">
+            <img src="/static/images/snu_logo.png" alt="Logo" style="max-height: 60px; margin: 0 10px;">
+          </a>
+          <a href="https://aidas.snu.ac.kr">
+            <img src="/static/images/aidaslab3_logo.png" alt="Logo" style="max-height: 36px; margin: 10px 10px;">
+          </a>
+        </div>
       </div>
+      
     </div>
   </div>
 </footer>

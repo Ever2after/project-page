@@ -2,10 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!-- Meta: paper description and keywords -->
   <meta name="description"
         content="This is a description of the research paper.">
   <meta name="keywords" content="Keyword1, Keyword2, Keyword3">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Paper title -->
   <title>Title</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -34,6 +36,7 @@
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -54,13 +57,20 @@
   </div>
 </nav>
 
-<!-- Title -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
+          <!-- Paper Title -->
           <h1 class="title is-1 publication-title">Paper Title</h1>
+
+          <!-- Conference Name and Year -->
+          <h1 class="title is-4 publication-title" style="color: #FF0066;">
+            Conference Name, Year
+          </h1>
+
+          <!-- Authors and Affiliations -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://...">Author1</a><sup>1</sup>,</span>
@@ -104,6 +114,16 @@
                   <span>arXiv</span>
                 </a>
               </span>
+              <!-- Model Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/models/... (모델 링크)"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-share-square"></i>
+                  </span>
+                  <span>Model</span>
+                  </a>
+              </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/... (코드 링크)"
@@ -123,6 +143,7 @@
                   </span>
                   <span>Demo</span>
                   </a>
+              </span>
               <!-- Dataset Link. -->
               <span class="link-block">
                 <a href="https://huggingface.co/datasets/... (데이터셋 링크)"
@@ -132,17 +153,8 @@
                   </span>
                   <span>Dataset</span>
                   </a>
-              <!-- Model Link. -->
-              <span class="link-block">
-                <a href="https://huggingface.co/models/... (모델 링크)"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-share-square"></i>
-                  </span>
-                  <span>Model</span>
-                  </a>
+              </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -200,6 +212,7 @@
           This section provides an interactive demo of the research. You can try out the model and see how it works in real-time.
           The demo allows you to input data and observe the model's predictions or outputs.
         </p>
+        <!-- HF Space Link -->
         <gradio-app src="https://aidas-lab-test.hf.space"></gradio-app>
       </div>
     </div>
@@ -300,7 +313,7 @@
       </div>
 </section>
 
-
+<!-- BibTeX -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -313,7 +326,7 @@
   </div>
 </section>
 
-
+<!-- Footer (Don't change) -->
 <footer class="footer" style="padding-bottom: 40px;">
   <div class="container">
     <div class="columns is-centered">
@@ -326,16 +339,14 @@
           </p>
         </div>
         <div class="content has-text-centered">
-          <!-- LOGO -->
           <a href="https://en.snu.ac.kr">
-            <img src="./static/images/snu_logo.png" alt="Logo" style="max-height: 60px; margin: 0 10px;">
+            <img src="./static/images/snu_logo.png" alt="Logo" style="max-height: 48px; margin: 6px 10px;">
           </a>
           <a href="https://aidas.snu.ac.kr">
-            <img src="./static/images/aidaslab3_logo.png" alt="Logo" style="max-height: 36px; margin: 10px 10px;">
+            <img src="./static/images/aidaslab_logo.png" alt="Logo" style="max-height: 36px; margin: 10px 30px;">
           </a>
         </div>
       </div>
-      
     </div>
   </div>
 </footer>
